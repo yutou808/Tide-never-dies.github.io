@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
+    <script>
+    // 强制HTTPS跳转
+    if (window.location.protocol === 'http:') {
+      window.location.href = 'https://' + 
+                            window.location.host + 
+                            window.location.pathname;
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人博客</title>
+</head>
+<body>
+  <h1>欢迎来到我的网站！</h1>
+  <p>这个页面已启用HTTPS安全连接 🔒</p>
+</body>
+</html>
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
